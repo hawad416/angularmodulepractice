@@ -1,1 +1,20 @@
+<!--//router outlet displays instance of our componenet that we are on.
+so wherever we place our routeroutlet is where our component will be creeated
+, so angular finds whateveer compoennet matches the current route, and takes that
+componenet and displays it in the router outlet-->
+
+<!--if we use href attribute to navigate around,
+it essentially makes all of our requests for our angular app all over
+and refreshes the whole app to route us to the correct page.
+We should INSTEAD use routerLink in our angular applciaitons, beacause w
+when we navigate around, we are not making any additional requests to our 
+development server. and our entire 
+angular app is not being reloaded . routerLink attribute talks directly to our router
+which decided what to show on the scrreen based on 
+our current URL. so angular will navigate/update to our url
+bu tnot issue an entired new browser request to that url-->
+
+<a routerLink="/elements">Elements</a>
+<a routerLink="/collections">Collections</a>
+
 <router-outlet></router-outlet>
