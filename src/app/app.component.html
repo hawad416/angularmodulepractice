@@ -14,7 +14,12 @@ which decided what to show on the scrreen based on
 our current URL. so angular will navigate/update to our url
 bu tnot issue an entired new browser request to that url-->
 
-<a routerLink="/elements">Elements</a>
-<a routerLink="/collections">Collections</a>
-
-<router-outlet></router-outlet>
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+    <a routerLink="/elements" class="item">Elements</a>
+    <a routerLink="/collections" class="item">Collections</a>
+  </div>
+  <div class="ui segment">
+    <router-outlet></router-outlet>
+  </div>
+</div>
