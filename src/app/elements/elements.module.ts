@@ -9,7 +9,12 @@ import { TimesDirective } from './times.directive';
 import { SegmentComponent } from './segment/segment.component';
 
 @NgModule({
-  declarations: [ElementsHomeComponent, PlaceholderComponent, TimesDirective, SegmentComponent],
+  declarations: [
+    ElementsHomeComponent,
+    PlaceholderComponent,
+    TimesDirective,
+    SegmentComponent,
+  ],
   imports: [CommonModule, ElementsRoutingModule, SharedModule],
   exports: [],
 })
